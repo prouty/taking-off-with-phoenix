@@ -27,7 +27,9 @@ defmodule Workshop.Router do
     post "/register", RegistrationController, :create
 
     post "/session", SessionController, :new
+    resources "/users", UserController
   end
+
 
   # Other scopes may use custom stacks.
   # scope "/api", Workshop do
